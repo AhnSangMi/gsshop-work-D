@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title></title>
+
+	<link rel="stylesheet" href="../_js/ui/jquery-ui.min.css" media="all">
+	<link rel="stylesheet" href="../_css/prettyCheckable/prettyCheckable.css" media="all">
+	<link rel="stylesheet" href="../_css/custom.style.css" media="all">
+	<link rel="stylesheet" href="../_css/style.web.css" media="all">
+	<link rel="stylesheet" href="../_css/style.order.css" media="all">
+	<script src="../_js/jquery-1.11.1.min.js"></script>
+	<script src="../_js/ui/jquery-ui.min.js"></script>
+	<script src="../_js/prettyCheckable.js"></script>
+	<script src="../_js/jquery.custom.js"></script>
+	<script src="../_js/jquery.placeholder.js"></script>
+	<script src="../_js/hangouyou.common.js"></script>
+	<script src="../_js/hangouyou.web.js"></script>
+</head>
+<body>
+		
+	<div id="ft"></div>
+	<div class="pop_wrap">
+		<div class="bg_white address shopping" style="top:100px;">
+			<div class="r_wrap">
+				<a href=""><img src="../_images/btn_close_pop.png" class="close_x"/></a>
+				<div class="m_detail">
+					<h3 class="c_wrap tit">배송지 조회</h3>
+					<p class="notice mt_30">배송받으실 주소를 선택하여주시기 바랍니다.</p>
+					<ul class="wrap f_left tab_wrap">
+						<li class="active"><a href="javascript:;"><span>리스트 조회</span></a></li>
+						<li><a href="javascript:;"><span>키워드 검색</span></a></li>
+					</ul>
+					<div class="tab-content-area active">
+						<ul class="c_wrap city-area">
+							<li class="mr_60">
+								<label>시/도</label>
+								<select>
+									<option>선택</option>
+									<option>서울</option>
+								</select>
+							</li>
+							<li>
+								<label>시/군/구</label>
+								<select>
+									<option>전체선택</option>
+									<option>강남구</option>
+									<option>강동구</option>
+									<option>강서구</option>
+									<option>노원구</option>
+									<option>도봉구</option>
+									<option>동작구</option>
+									<option>강남구</option>
+									<option>강동구</option>
+									<option>강서구</option>
+									<option>노원구</option>
+									<option>도봉구</option>
+									<option>동작구</option>
+								</select>
+							</li>
+						</ul>
+						<table class="add_list wrap">
+							<colgroup>
+								<col width="193px">
+								<col width="*">
+							</colgroup>
+							<tr>
+								<th>호텔명</th>
+								<th>주소</th>
+							</tr>
+						</table>
+						<div class="over_wrap r_wrap">
+							<table class="add_list wrap">
+								<tr>
+									<td class="t_center f_black"><strong>검색 결과가 없습니다.</strong></td>
+								</tr>
+							</table>
+							<table class="add_list wrap s1">
+								<colgroup>
+									<col width="193px">
+									<col width="*">
+								</colgroup>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+							</table>
+							<script>
+								$(".add_list.s1 tr").each(function(i){
+									$(".add_list.s1 tr").eq(i).click(function(){
+										$(".add_list.s1 tr").removeClass("active");
+										$(".add_list.s1 tr").eq(i).addClass("active");	
+									})
+								});
+							</script>
+						</div>
+						<div class="result-area c_wrap mt_15">
+							<button class="btn btn-black mr_10">닫기</button>
+							<button class="btn btn-red-fill">확인</button>	
+						</div>
+					</div>
+					
+					<div class="tab-content-area">
+						<ul class="c_wrap city-area find">
+							<li>
+								<label>숙소명 검색</label>
+							</li>
+							<li class="find">
+								<div class="r_wrap">
+									<img src="../_images/ico_find.png" class="ico"/>
+									<input type="text" placeholder="호텔명을 입력해주세요" class="wrap" />
+									<button>검색</button>
+								</div>
+							</li>
+						</ul>
+						<table class="add_list wrap">
+							<colgroup>
+								<col width="193px">
+								<col width="*">
+							</colgroup>
+							<tr>
+								<th>호텔명</th>
+								<th>주소</th>
+							</tr>
+						</table>
+						<div class="over_wrap r_wrap">
+							<table class="add_list wrap">
+								<colgroup>
+									<col width="193px">
+									<col width="*">
+								</colgroup>
+								<tr>
+									<td colspan="2" class="t_center f_black"><strong>검색 결과가 없습니다.</strong></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+								<tr>
+									<td><a href="javascript:;">신라호텔 서울</a></td>
+									<td><p>서울특별시 중구 장충동2가 202</p></td>
+								</tr>
+							</table>
+						</div>
+						<div class="result-area c_wrap mt_15">
+							<button class="btn btn-black mr_10">닫기</button>
+							<button class="btn btn-red-fill">확인</button>	
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	$(".tab_wrap li").each(function(i){
+		$(".tab_wrap li").eq(i).click(function(){
+			$(".tab_wrap li").removeClass("active");
+			$(".tab_wrap li").eq(i).addClass("active");
+			$(".tab-content-area").hide();
+			$(".tab-content-area").eq(i).show();
+		})	
+	})
+</script>

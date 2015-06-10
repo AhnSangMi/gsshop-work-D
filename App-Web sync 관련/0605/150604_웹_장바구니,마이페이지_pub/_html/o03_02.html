@@ -1,0 +1,111 @@
+<!-- header 인클루드 영역 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title></title>
+
+	<link rel="stylesheet" href="../_js/ui/jquery-ui.min.css" media="all">
+	<link rel="stylesheet" href="../_css/prettyCheckable/prettyCheckable.css" media="all">
+	<link rel="stylesheet" href="../_css/custom.style.css" media="all">
+	<link rel="stylesheet" href="../_css/style.web.css" media="all">
+	<link rel="stylesheet" href="../_css/style.order.css" media="all">
+	<script src="../_js/jquery-1.11.1.min.js"></script>
+	<script src="../_js/ui/jquery-ui.min.js"></script>
+	<script src="../_js/prettyCheckable.js"></script>
+	<script src="../_js/jquery.custom.js"></script>
+	<script src="../_js/jquery.placeholder.js"></script>
+	<script src="../_js/hangouyou.common.js"></script>
+	<script src="../_js/hangouyou.web.js"></script>
+</head>
+<body>
+
+	<div id="header">
+		<div class="m_wrap">
+			<? include_once("../_include/gnb.html"); ?>
+		</div>
+	</div>
+	<!-- //header 인클루드 영역 -->
+
+	<div id="contents" class="shopping wrap">
+		
+		<div class="title-area wrap">
+			<div class="sub-category-wrap wrap">
+				<div class="m_main">
+					<div class="m_980">
+						<ul class="f_left">
+							<li><a href="">HOT</a></li>
+							<li><a href="">Beauty</a></li>
+							<li><a href="">Health</a></li>
+							<li><a href="">Wear</a></li>
+							<li><a href="">bag&amp;Acc</a></li>
+							<li><a href="">Kids</a></li>
+						</ul>
+						<a href=""><span class="heart f_right"><img src="../_images/top.heart.png" /></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="inner-wrap wrap">
+			<div class="m_wrap">
+				<div class="sub-title-area">
+					<div class="m_sub_title">
+						<ul class="shopping-step wrap f_left">
+							<li>
+								<span class="step-no">01</span><br />
+								<span class="step-title">장바구니</span>
+							</li>
+							<li>
+								<span class="step-no">02</span><br />
+								<span class="step-title">주문결제</span>
+							</li>
+							<li class="active">
+								<span class="step-no">03</span><br />
+								<span class="step-title">주문완료</span>
+							</li>
+						</ul>
+						<span class="bd"></span>
+					</div>
+				</div>
+				
+				<div class="alert fail c_wrap">
+					<h3 class="wrap">결제가 실패 했습니다.<br />다시 결제 과정을 진행하여 주십시오.</h3>
+					<p class="wrap">
+						<strong>사유:한도초과</strong><br />
+						불편을 드려 죄송합니다.<br />문의사항은 고객센터로 연락 주시길 바랍니다.
+					</p>
+					<p class="c_wrap tel mt_10">
+						고객센터 전화번호 : 000-0000-0000<br />
+						고객센터 이메일주소 : <a href="mailto:cs@ooomail.com" class="mailto">cs@ooomail.com</a>
+					</p>
+					<div class="c_wrap mt_20">
+						<button class="btn-big btn-black qq wrap">SNS공식QQ번호 : 2889751559</button>
+					</div>
+				</div>
+				<div class="result-area c_wrap mt_30">
+					<div class="submit-btn-area fail">
+						<button class="btn-big btn-black mr_20">메인으로 이동</button>
+						<button class="btn-big btn-red-fill">장바구니로 돌아가기</button>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		
+	</div>
+	
+<!-- footer 인클루드 영역 -->
+	<div id="footer">
+		<div class="m_wrap">
+			<div class="m_980">
+				<? include_once("../_include/footer.html"); ?>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- //footer 인클루드 영역 -->

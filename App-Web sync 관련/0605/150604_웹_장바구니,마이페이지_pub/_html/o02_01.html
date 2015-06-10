@@ -1,0 +1,406 @@
+<!-- header 인클루드 영역 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title></title>
+
+	<link rel="stylesheet" href="../_js/ui/jquery-ui.min.css" media="all">
+	<link rel="stylesheet" href="../_css/prettyCheckable/prettyCheckable.css" media="all">
+	<link rel="stylesheet" href="../_css/custom.style.css" media="all">
+	<link rel="stylesheet" href="../_css/style.web.css" media="all">
+	<link rel="stylesheet" href="../_css/style.order.css" media="all">
+	<script src="../_js/jquery-1.11.1.min.js"></script>
+	<script src="../_js/ui/jquery-ui.min.js"></script>
+	<script src="../_js/prettyCheckable.js"></script>
+	<script src="../_js/jquery.custom.js"></script>
+	<script src="../_js/jquery.placeholder.js"></script>
+	<script src="../_js/hangouyou.common.js"></script>
+	<script src="../_js/hangouyou.web.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="m_wrap">
+			<? include_once("../_include/gnb.html"); ?>
+		</div>
+	</div>
+	<script>
+		$("#gnb .l4").addClass("active");
+	</script>
+	<!-- //header 인클루드 영역 -->
+
+	<div id="contents" class="shopping wrap">
+		
+		<div class="title-area wrap">
+			<div class="sub-category-wrap wrap">
+				<div class="m_wrap">
+					<div class="m_980">
+						<ul class="f_left">
+							<li><a href="">HOT</a></li>
+							<li><a href="">Beauty</a></li>
+							<li><a href="">Health</a></li>
+							<li><a href="">Wear</a></li>
+							<li><a href="">bag&amp;Acc</a></li>
+							<li><a href="">Kids</a></li>
+						</ul>
+						<a href=""><span class="heart f_right"><img src="../_images/top_heart.png" /></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="inner-wrap wrap">
+			<div class="m_wrap">
+				<div class="sub-title-area">
+					<div class="m_sub_title">
+						<ul class="shopping-step wrap f_left">
+							<li>
+								<span class="step-no">01</span><br />
+								<span class="step-title">장바구니</span>
+							</li>
+							<li class="active">
+								<span class="step-no">02</span><br />
+								<span class="step-title">주문결제</span>
+							</li>
+							<li>
+								<span class="step-no">03</span><br />
+								<span class="step-title">주문완료</span>
+							</li>
+						</ul>
+						<span class="bd"></span>
+					</div>
+				</div>
+			
+				<div class="body-area">
+					<div class="m_980">
+						<div class="wrap location">
+							<h3>주문하실 상품</h3>						
+						</div>
+						<table class="cart-table c2" cellpadding="0" cellspacing="0">
+							<colgroup>
+								<col width="110px">
+								<col width="">
+								<col width="100px">
+								<col width="100px">
+								<col width="150px">
+								<col width="100px">
+							</colgroup>
+							<thead>
+								<tr>
+									<th colspan="2">상품명 / 옵션</th>
+									<th>수량</th>
+									<th>쿠폰</th>
+									<th>주문금액</th>
+									<th>배송비</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="img t_center" valign="top">
+										<span class="img_wrap"><img src="../_images/s1.jpg" /></span>
+									</td>
+									<td class="cont" valign="top">
+										<div class="td_wrap">
+											<div class="product-title">
+												[더페이스샵] 수지추천! 빅세일 전상품 upto 50%
+												수지추천! 빅세일 전상품 upto 50%
+											</div>
+											<div class="product-option">[그레이 / 4]</div>
+										</div>
+									</td>
+									<td>4개</td>
+									<td class="coupon" valign="middle">
+										10% <br />할인쿠폰
+									</td>
+									<td class="price" valign="middle">
+										<div class="td_wrap">
+											<span class="krw">￦ 150,000</span><br />
+											<span class="cny">(대략 ￥ 100)</span>
+										</div>
+									</td>
+									<td class="shipping" valign="middle">
+										무료배송
+									</td>
+								</tr>
+								<tr>
+									<td class="img t_center" valign="top">
+										<span class="img_wrap"><img src="../_images/s1.jpg" /></span>
+									</td>
+									<td class="cont" valign="top">
+										<div class="td_wrap">
+											<div class="product-title">
+												[더페이스샵] 수지추천! 빅세일 전상품 upto 50%
+												수지추천! 빅세일 전상품 upto 50%
+											</div>
+											<div class="product-option">[그레이 / 4]</div>
+										</div>
+									</td>
+									<td>4개</td>
+									<td class="coupon" valign="middle">
+										10% <br />할인쿠폰
+									</td>
+									<td class="price" valign="middle">
+										<div class="td_wrap">
+											<span class="krw">￦ 150,000</span><br />
+											<span class="cny">(대략 ￥ 100)</span>
+										</div>
+									</td>
+									<td class="shipping" valign="middle">
+										2,500원
+									</td>
+								</tr>
+								<tr>
+									<td class="img t_center" valign="top">
+										<span class="img_wrap"><img src="../_images/s1.jpg" /></span>
+									</td>
+									<td class="cont" valign="top">
+										<div class="td_wrap">
+											<div class="product-title">
+												[더페이스샵] 수지추천! 빅세일 전상품 upto 50%
+												수지추천! 빅세일 전상품 upto 50%
+											</div>
+											<div class="product-option">[그레이 / 4]</div>
+										</div>
+									</td>
+									<td>4개</td>
+									<td class="coupon" valign="middle">
+										10% <br />할인쿠폰
+									</td>
+									<td class="price" valign="middle">
+										<div class="td_wrap">
+											<span class="krw">￦ 150,000</span><br />
+											<span class="cny">(대략 ￥ 100)</span>
+										</div>
+									</td>
+									<td class="shipping" valign="middle">
+										무료배송
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="result-area">
+							<div class="selected-btn-area">
+								<button class="btn-big btn-black">장바구니</button>
+							</div>
+							<div class="result-area-right">
+								<div class="result-price-area">
+									<div class="total-price">결제할 금액: 총 주문금액 <span class="price product">￦ 280,000</span> + 총 배송비 <span class="price shipping">￦ 0</span> =</div>
+									<div class="result-price"><span class="price krw">￦ 280,000 <span class="price cny">[<span class="small">대략</span> ￥ 100]</span></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="wrap mt_30">
+							<h3>주문자 정보</h3>
+							<table class="form-table delivery">
+								<colgroup>
+									<col width="120px" />
+									<col width="" />
+								</colgroup>
+								<tr>
+									<th>
+										<span>Profile Name</span>
+									</th>
+									<td>
+										<input type="text" class="w_400 readonly" value="홍길동" readonly="readonly" />
+										
+									</td>
+								</tr>
+								<tr>
+									<th class="v_top">
+										<span>수령인 영문성명</span>
+									</th>
+									<td>
+										<input type="text" placeholder="여권에 표기된 수령인 영문성명을 입력해주세요." class="width100p" />
+										<p class="tip">* 이곳에 입력하신 이름으로 상품송장에 표시되어 배송됩니다. </p>
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<span>전화번호</span>
+									</th>
+									<td>
+										<select>
+											<option>선택</option>
+										</select>&nbsp;&nbsp;
+										<input type="text" class="width70" />&nbsp;&nbsp;
+										<input type="text" class="width70" />
+									</td>
+								</tr>
+								<tr>
+									<th>
+										<span>E-mail</span>
+									</th>
+									<td>
+										<input type="text" placeholder="" class="w_400 readonly" readonly value="test@test.com"/>
+									</td>
+								</tr>
+								<tr>
+									<th class="v_top">
+										<span>배송지 선택</span>
+									</th>
+									<td>
+										<div class="basic">
+											<button class="btn btn-black add mt_5">이전주소</button>
+											<button class="btn btn-black add mt_5">신규주소</button>
+										</div>
+										<input type="text" placeholder="배송지를 선택해 주세요" readonly class="width100p readonly" />
+										<input type="text" placeholder="" class="width100p readonly mt_5"/>
+									</td>
+								</tr>
+								<tr>
+									<th class="v_top">
+										<span>배송선택</span>
+									</th>
+									<td>
+										<div class="basic">
+											<input type="radio" name="rdoDeliveryType" class="checkable c1 mt_5" data-label="일반배송" checked="checked" />&nbsp; &nbsp;
+											<input type="radio" name="rdoDeliveryType" class="checkable c2 mt_5" data-label="지정일배송" />
+										</div>
+										<p class="tip d_type">* 일반배송은 1~2일내로 가능합니다. 기간내 상품수령이 가능한배송일정을 확인해 주시기 바랍니다. </p>
+										<table class="d_type delivery-date rdoDeliveryType">
+											<colgroup>
+												<col width="120px" />
+												<col width="" />
+											</colgroup>
+											<tr>
+												<th>
+													여행예정일
+												</th>
+												<td>
+													<input type="text" class="datepicker" /><span class="term_bar">~</span>
+													<input type="text" class="datepicker" />
+												</td>
+											</tr>
+											<tr class="last">
+												<th>
+													배송희망일선택
+												</th>
+												<td>
+													<input type="text" class="datepicker" />
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							
+							<h3>결제정보</h3>
+							<table class="form-table settlement">
+								<colgroup>
+									<col width="120px" />
+									<col width="" />
+									<col width="490px" />
+								</colgroup>
+								<tr>
+									<th>
+										<span><strong>결제예정금액</strong></span>
+									</th>
+									<td>
+										<div class="radio-wrap">
+											￦ <label>280,000</label> (대략 ￥ 100)</span>
+										</div>
+									</td>
+									<td rowspan="5" class="summary v_top">
+										<div class="inner_wrap wrap mt_25">
+											<table class="inner wrap">
+												<colgroup>
+													<col width="*" />
+													<col width="110px" />
+													<col width="90px" />
+												</colgroup>
+												<tr>
+													<th colspan="3"><h4>최종 결제 금액</h4></th>
+												</tr>
+												<tr>
+													<th>총상품가</th>
+													<td class="won"> &#65510;280,000</td>
+													<td class="won2">(대략 ￥ 100)</td>
+												</tr>
+												<tr>
+													<th>총 배송비</th>
+													<td class="won"> 0</td>
+													<td class="won2">(대략 ￥ 0)</td>
+												</tr>
+												<tr>
+													<th>총 할인액</th>
+													<td class="won"> &#65510;28,000</td>
+													<td class="won2">(대략 ￥ 10)</td>
+												</tr>
+											</table>
+											<div class="result wrap">
+												<h3> &#65510;258,000 <span>[<small>대략</small> ￥ 90]</span></h3>
+												<small>약 10% 절약</small>
+											</div>
+											<label class="tot_chk mt_70">
+												<input type="checkbox" />&nbsp;위 주문의 상품, 가격, 할인, 배송정보에 동의합니다.
+											</label>
+										</div>
+									</td>
+								</tr>
+								<tr class="coupon">
+									<th>
+										<span class="pl_10">쿠폰할인</span>
+									</th>
+									<td>
+										<div class="radio-wrap">
+											<input type="text" class="coupon" readonly /> 원 (￥ 10.0)&nbsp; &nbsp;
+											<button class="btn btn-white search">쿠폰조회 및 적용(<label>2</label>)</button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th valign="bottom" colspan="2">
+										<h3>결제수단 선택</h3>
+									</th>
+								</tr>
+								<tr>
+									<th class="bd_btt">
+										<span>결제수단</span>
+									</th>
+									<td class="bd_btt">
+										<div class="radio-wrap">
+											<input type="radio" name="rdoPayType" class="checkable" data-label="Alipay" checked="checked" />&nbsp; &nbsp;
+											<input type="radio" name="rdoPayType" class="checkable" data-label="Unilonpay" />
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<div class="notice-area mt_0">
+											<ul>
+												<li>등록한 카드가 도난 혹은 타인 명의이거나, 허위, 정보누락, 오기가 있는 경우 구매자의 동의<br />&nbsp;&nbsp;&nbsp;  없이 체결취소가 가능합니다.</li>
+												<li class="mt_5">환율로 인한 결제금액의 환차손익은 구매고객님께 부담됩니다.</li>
+												<li class="mt_5">환율변동으로 인해 주문 시점과 결제시점의 자국 통화 환산금액에 차액이 발생할 수 있으며,<br />&nbsp;&nbsp;&nbsp;실제 자국통화 결제금액은 카드정보 입력화면에 표시되는 금액으로 확인해 주시기 바랍니다.</li>
+												<li class="mt_5">결제에 대한 문의가 필요하신 경우, 82-2-6277-6700 (평일 오전 9시~오후 6시, 토요일 오전<br />&nbsp;&nbsp;&nbsp; 9시~오전 12시, 한국시간 기준)로 연락주시기 바랍니다. </li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+							</table>
+							<div class="result-area">
+								<div class="submit-btn-area">
+									<button class="btn-big btn-black">장바구니</button>&nbsp; &nbsp;
+									<button class="btn-big btn-red-fill">결제하기</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- footer 인클루드 영역 -->
+	<div id="footer">
+		<div class="m_wrap">
+			<div class="m_980">
+				<? include_once("../_include/footer.html"); ?>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- //footer 인클루드 영역 -->

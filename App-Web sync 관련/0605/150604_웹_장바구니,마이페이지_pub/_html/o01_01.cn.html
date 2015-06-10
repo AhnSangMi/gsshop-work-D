@@ -1,0 +1,282 @@
+<!-- header 인클루드 영역 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title></title>
+
+	<link rel="stylesheet" href="../_js/ui/jquery-ui.min.css" media="all">
+	<link rel="stylesheet" href="../_css/prettyCheckable/prettyCheckable.css" media="all">
+	<link rel="stylesheet" href="../_css/custom.style.css" media="all">
+	<link rel="stylesheet" href="../_css/style.web.css" media="all">
+	<link rel="stylesheet" href="../_css/style.order.css" media="all">
+	<script src="../_js/jquery-1.11.1.min.js"></script>
+	<script src="../_js/ui/jquery-ui.min.js"></script>
+	<script src="../_js/prettyCheckable.js"></script>
+	<script src="../_js/jquery.custom.js"></script>
+	<script src="../_js/jquery.placeholder.js"></script>
+	<script src="../_js/hangouyou.common.js"></script>
+	<script src="../_js/hangouyou.web.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="m_wrap">
+			<? include_once("../_include/gnb.html"); ?>
+		</div>
+	</div>
+	<script>
+		$("#gnb .l4").addClass("active");
+	</script>
+	<!-- //header 인클루드 영역 -->
+
+	<div id="contents" class="shopping wrap">
+		<div class="title-area wrap">
+			<div class="sub-category-wrap wrap">
+				<div class="m_wrap">
+					<div class="m_980">
+						<ul class="f_left">
+							<li><a href="">HOT</a></li>
+							<li><a href="">Beauty</a></li>
+							<li><a href="">Health</a></li>
+							<li><a href="">Wear</a></li>
+							<li><a href="">bag&amp;Acc</a></li>
+							<li><a href="">Kids</a></li>
+						</ul>
+						<a href=""><span class="heart f_right"><img src="../_images/top_heart.png" /></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="inner-wrap wrap">
+			<div class="m_wrap">
+				<div class="sub-title-area">
+					<div class="m_sub_title">
+						<ul class="shopping-step wrap f_left">
+							<li class="active">
+								<span class="step-no">01</span><br />
+								<span class="step-title">购物车</span>
+							</li>
+							<li>
+								<span class="step-no">02</span><br />
+								<span class="step-title">查看</span>
+							</li>
+							<li>
+								<span class="step-no">03</span><br />
+								<span class="step-title">秩序</span>
+							</li>
+						</ul>
+						<span class="bd"></span>
+					</div>
+				</div>
+				
+				<div class="m_980">
+					<div class="body-area">
+						<div class="wrap location">
+							<h3 class="f_left">购物车</h3>
+							<p class="f_right notice">在购物车中的产品将被保留，为期15天。</p>	
+						</div>
+						<table class="cart-table" cellpadding="0" cellspacing="0">
+							<colgroup>
+								<col width="50px">
+								<col width="100px">
+								<col width="">
+								<col width="102px">
+								<col width="153px">
+								<col width="100px">
+								<col width="87px">
+								<col width="87px">
+							</colgroup>
+							<thead>
+								<tr>
+									<th class="ckb-all t_left pl_10" colspan="2">
+										<input id="ckbSelectAll" name="ckbSelect" type="checkbox" class="checkable" data-label="全选" />
+									</th>
+									<th>产品名称 / 选项</th>
+									<th>优惠券</th>
+									<th>优惠</th>
+									<th>航运</th>
+									<th colspan="2">秩序</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="ckb non-bd-r">
+										<div class="td_wrap">
+											<input id="ckbSelect1" name="ckbSelect" type="checkbox" class="checkable" data-label="缺失" />
+										</div>
+									</td>
+									<td class="img" valign="top">
+										<div class="img_wrap"><img src="../_images/s1.jpg" /></div>
+									</td>
+									<td class="cont" valign="top">
+										<div class="td_wrap">
+											<div class="product-title">
+												[THE FACE SHOP] 树脂推荐！大甩卖所有产品高达50％ 树脂推荐！大甩卖所有产品高达50％
+											</div>
+											<div class="product-option">[灰 / 4] <span class="btn-opt-edit"><a href="#">更改选项 &gt;</a></span></div>
+										</div>
+									</td>
+									<td class="coupon" valign="middle">
+										10％ <br />
+										的折扣优惠券
+									</td>
+									<td class="price" valign="middle">
+										<div class="td_wrap">
+											<span class="krw">￦ 150,000</span><br />
+											<span class="cny">(大约 ￥ 100)</span>
+										</div>
+									</td>
+									<td class="shipping" valign="middle">
+										免费送货
+									</td>
+									<td class="buy" valign="middle" colspan="2">
+										<button class="btn btn-green">直接购买</button>
+									</td>
+								</tr>
+								<tr>
+									<td class="ckb non-bd-r">
+										<div class="td_wrap">
+											<input id="ckbSelect2" name="ckbSelect" type="checkbox" class="checkable" data-label="缺失" />
+										</div>
+									</td>
+									<td class="img" valign="top">
+										<div class="img_wrap"><img src="../_images/s1.jpg" /></div>
+									</td>
+									<td class="cont" valign="top">
+										<div class="td_wrap">
+											<div class="product-title">
+												[THE FACE SHOP] 树脂推荐！大甩卖所有产品高达50％ 树脂推荐！大甩卖所有产品高达50％
+											</div>
+											<div class="product-option">[灰 / 4] <span class="btn-opt-edit"><a href="#">更改选项 &gt;</a></span></div>
+										</div>
+									</td>
+									<td class="coupon" valign="middle">
+										10％ <br />
+										的折扣优惠券
+									</td>
+									<td class="price" valign="middle">
+										<div class="td_wrap">
+											<span class="krw">￦ 150,000</span><br />
+											<span class="cny">(大约 ￥ 100)</span>
+										</div>
+									</td>
+									<td class="shipping" valign="middle">
+										￦ 2,500<br />
+										<span class="cny">(大约 ￥ 100)</span>
+									</td>
+									<td class="buy" valign="middle">
+										<button class="btn btn-green">直接购买</button>
+									</td>
+									<td class="buy" valign="middle" rowspan="2">
+										<button class="btn btn-black">束抽出</button><br /><br />
+										<span>免费送货</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="ckb non-bd-r">
+										<div class="td_wrap">
+											<input id="ckbSelect3" name="ckbSelect" type="checkbox" class="checkable" data-label="缺失" />
+										</div>
+									</td>
+									<td class="img" valign="top">
+										<div class="img_wrap"><img src="../_images/s1.jpg" /></div>
+									</td>
+									<td class="cont" valign="top">
+										<div class="td_wrap">
+											<div class="product-title">
+												[THE FACE SHOP] 树脂推荐！大甩卖所有产品高达50％ 树脂推荐！大甩卖所有产品高达50％
+											</div>
+											<div class="product-option">[灰 / 4] <span class="btn-opt-edit"><a href="#">更改选项 &gt;</a></span></div>
+										</div>
+									</td>
+									<td class="coupon" valign="middle">
+										10％ <br />
+										的折扣优惠券
+									</td>
+									<td class="price" valign="middle">
+										<div class="td_wrap">
+											<span class="krw">￦ 150,000</span><br />
+											<span class="cny">(大约 ￥ 100)</span>
+										</div>
+									</td>
+									<td class="shipping" valign="middle">
+										免费送货
+									</td>
+									<td class="buy" valign="middle">
+										<button class="btn btn-green">直接购买</button>
+									</td>
+								</tr>
+								<tr>
+									<td class="ckb non-bd-r">
+										<div class="td_wrap">
+											<input id="ckbSelect3" name="ckbSelect" type="checkbox" class="checkable" data-label="삭제" />
+										</div>
+									</td>
+									<td class="img" valign="top">
+										<div class="img_wrap"><img src="../_images/s1.jpg" /></div>
+									</td>
+									<td class="cont" valign="top">
+										<div class="td_wrap">
+											<div class="product-title">
+												[THE FACE SHOP] 树脂推荐！大甩卖所有产品高达50％ 树脂推荐！大甩卖所有产品高达50％
+											</div>
+											<div class="product-option">[灰 / 4] <span class="btn-opt-edit"><a href="#">更改选项 &gt;</a></span></div>
+										</div>
+									</td>
+									<td colspan="3">此产品暂时缺货。</td>
+									<td colspan="2" class="buy" valign="middle" >
+										<button class="btn btn-green">产品缺失</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="result-area">
+							<div class="selected-btn-area">
+								<button class="btn btn-black">选择删除</button>
+							</div>
+							<div class="result-area-right">
+								<div class="result-price-area">
+									<div class="total-price">您的付款金额: 总价 <span class="price product">￦ 280,000</span> + 航运 <span class="price shipping">￦ 0</span> =</div>
+									<div class="result-price"><span class="price krw">￦ 280,000 <span class="price cny">[<span class="small">大约</span> ￥ 100]</span></div>
+								</div>
+								<div class="buy-btn-area">
+									<button class="btn-big btn-red-fill pay">交费</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="notice-area">
+							<h3 class="wrap">车服务信息</h3>
+							<ul>
+								<li>如果您订购了保持很长一段时间在购物车中的项目，价格和收益有可能发生变化。</li>
+								<li>产品包含在另一个购物车eopeuni可以支付，请单独支付每车。</li>
+								<li>包含在车的任何产品只能保留30天。为了保持更长的时间，请注册为 <span class="link"><a href="#">'愿望清单'</a></span>。</li>
+							</ul>
+							<h3 class="wrap mt_30">束抽出信息</h3>
+							<ul>
+								<li>束抽出邮资将只接收一次小的代价。该服务是适用前提工厂用地它们是相同的产品。</li> 
+								<li>如果一个或多个免费送货，免费送货捆绑。但是，它可能只排除或取决于产品于同一产品的束。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+<!-- footer 인클루드 영역 -->
+	<div id="footer">
+		<div class="m_wrap">
+			<div class="m_980">
+				<? include_once("../_include/footer.html"); ?>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- //footer 인클루드 영역 -->

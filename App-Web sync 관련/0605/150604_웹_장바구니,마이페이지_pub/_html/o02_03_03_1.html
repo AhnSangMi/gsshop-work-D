@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title></title>
+
+	<link rel="stylesheet" href="../_js/ui/jquery-ui.min.css" media="all">
+	<link rel="stylesheet" href="../_css/prettyCheckable/prettyCheckable.css" media="all">
+	<link rel="stylesheet" href="../_css/custom.style.css" media="all">
+	<link rel="stylesheet" href="../_css/style.web.css" media="all">
+	<link rel="stylesheet" href="../_css/style.order.css" media="all">
+	<script src="../_js/jquery-1.11.1.min.js"></script>
+	<script src="../_js/ui/jquery-ui.min.js"></script>
+	<script src="../_js/prettyCheckable.js"></script>
+	<script src="../_js/jquery.custom.js"></script>
+	<script src="../_js/jquery.placeholder.js"></script>
+	<script src="../_js/hangouyou.common.js"></script>
+	<script src="../_js/hangouyou.web.js"></script>
+</head>
+<body>
+		
+	<div id="ft"></div>
+	<div class="pop_wrap">
+		<div class="bg_white address a2 shopping" style="top:100px;">
+			<div class="r_wrap">
+				<a href=""><img src="../_images/btn_close_pop.png" class="close_x"/></a>
+				<div class="m_detail">
+					<h3 class="c_wrap tit">이전 배송지 선택</h3>
+					<p class="notice mt_30">최근 배송주소를 보여 드립니다.(5개)</p>
+					<div class="add_list_wrap wrap mt_5">
+						<table class="add_list wrap">
+							<tr>
+								<td class="t_center" style="height:375px;"><strong>이전배송지가 없습니다</strong></td>
+							</tr>
+						</table>
+					</div>						
+					<div class="result-area c_wrap mt_15">
+						<button class="btn btn-black mr_10">닫기</button>
+						<button class="btn btn-red-fill">확인</button>	
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	$(".tab_wrap li").each(function(i){
+		$(".tab_wrap li").eq(i).click(function(){
+			$(".tab_wrap li").removeClass("active");
+			$(".tab_wrap li").eq(i).addClass("active");
+			$(".tab-content-area").hide();
+			$(".tab-content-area").eq(i).show();
+		})	
+	})
+</script>
